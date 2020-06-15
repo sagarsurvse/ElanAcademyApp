@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="false">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="top"
+            android:background="#FAFCFC"
+            android:orientation="vertical">
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="44dp"
+                android:gravity="center_horizontal"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:id="@+id/title"
+                android:textColor="#02979c"
+                android:text="Elan Academy"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:layout_below="@id/title"
+                android:gravity="center_horizontal"
+                android:textColor="#000000"
+                android:id="@+id/subtitle"
+                android:text="we help people change the world"/>
+
+
+            <!--<ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/elanfree"
+                android:scaleType="centerCrop"/>-->
+
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/subtitle"
+                android:id="@+id/recyclerofersandsbrands"
+                android:orientation="horizontal">
+
+            </androidx.recyclerview.widget.RecyclerView>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#F5F2F4"
+                android:layout_marginTop="15dp"
+                android:layout_below="@id/recyclerofersandsbrands"
+                android:id="@+id/Liveclass">
+
+                <TextView
+                    android:id="@+id/trends"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="1"
+                    android:text="Attend Live Classes"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:textColor="#000000"/>
+
+                <TextView
+                    android:id="@+id/viewall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:layout_alignParentEnd="true"
+                    android:text="VIEW ALL"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:textColor="#02979c"
+                    android:layout_alignParentRight="true" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:background="#F5F2F4"
+                android:id="@+id/recyclelive"
+                android:layout_below="@id/Liveclass"
+                android:layout_height="wrap_content">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:background="#F5F2F4"
+                    android:id="@+id/recycview2"
+                    android:orientation="horizontal">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#F5F2F4"
+                android:layout_marginTop="15dp"
+                android:layout_below="@id/recyclelive"
+                android:id="@+id/Schoarship">
+
+                <TextView
+                    android:id="@+id/scolar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="1"
+                    android:text="Scholarships,Rewards &amp; Results"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:textColor="#000000"/>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:id="@+id/offer"
+                android:background="#ffff"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/recycview2"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/viewPage"
+                    android:background="@drawable/rounded_red_border"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp" />
+
+
+                <com.viewpagerindicator.CirclePageIndicator
+                    android:id="@+id/indicator2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="130dp"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="bottom"
+                    android:padding="10dip"
+                    app:radius="5dp"
+                    app:strokeWidth="2dp"
+                    app:centered="true"
+                    app:fillColor="#ffff"
+                    app:pageColor="#02979c"
+                    app:snap="false" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#F5F2F4"
+                android:layout_marginTop="15dp"
+                android:layout_below="@id/offer"
+                android:id="@+id/microcouses">
+
+                <TextView
+                    android:id="@+id/m1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="1"
+                    android:text="Micro Courses-Topic Wise"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:textColor="#000000"/>
+
+                <TextView
+                    android:id="@+id/viewall2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:layout_alignParentEnd="true"
+                    android:text="VIEW ALL"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:textColor="#02979c"
+                    android:layout_alignParentRight="true" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:background="#F5F2F4"
+                android:id="@+id/recyclelivemicro"
+                android:layout_marginBottom="15dp"
+                android:layout_below="@id/microcouses"
+                android:layout_height="wrap_content">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:background="#F5F2F4"
+                    android:id="@+id/recycview3"
+                    android:orientation="horizontal">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>

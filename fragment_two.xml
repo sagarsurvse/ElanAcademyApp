@@ -1,0 +1,254 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Material.Fragment.TwoFragment">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="false">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="top"
+        android:background="#FAFCFC"
+        android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:background="@drawable/fl"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/linear"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:id="@+id/overlaybrands"
+        card_view:cardBackgroundColor="@android:color/white">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:textColor="#02979c"
+                android:text="Java Main Important"
+                android:textStyle="bold"
+                android:layout_alignParentTop="true"
+                 />
+
+            <TextView android:id="@+id/subTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Elan Academy in IT notes"
+                android:layout_toRightOf="@+id/icon"
+                android:layout_below="@+id/title"
+                android:textColor="#02979c"
+                 />
+
+
+            <ImageView
+                android:id="@+id/icon3"
+                android:layout_width="30dp"
+                android:layout_height="25dp"
+                android:src="@drawable/right"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="15dp"
+                />
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+
+    <androidx.cardview.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:background="@drawable/fl"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/overlaybrands"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:id="@+id/card1"
+        card_view:cardBackgroundColor="@android:color/white">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/titlesecond"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:textColor="#02979c"
+                android:text="English Main Important"
+                android:textStyle="bold"
+                android:layout_alignParentTop="true"
+                 />
+
+            <TextView android:id="@+id/subTitl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Elan Academy in English Notes"
+                android:layout_below="@+id/titlesecond"
+                android:textColor="#02979c"
+                />
+
+
+            <ImageView
+                android:id="@+id/icon31"
+                android:layout_width="30dp"
+                android:layout_height="25dp"
+                android:src="@drawable/right"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="15dp"
+                />
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:background="@drawable/fl"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/card1"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:id="@+id/card2"
+        card_view:cardBackgroundColor="@android:color/white">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/titleseconds"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:textColor="#02979c"
+                android:text="exam Main Important"
+                android:textStyle="bold"
+                android:layout_alignParentTop="true"
+                />
+
+            <TextView android:id="@+id/subTitls"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Elan Academy in exam Notes"
+                android:layout_below="@+id/titleseconds"
+                android:textColor="#02979c"
+                />
+
+
+            <ImageView
+                android:id="@+id/icon32"
+                android:layout_width="30dp"
+                android:layout_height="25dp"
+                android:src="@drawable/right"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="15dp"
+                />
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:background="@drawable/fl"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/card2"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:id="@+id/card3"
+        card_view:cardBackgroundColor="@android:color/white">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/titlesecondl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:textColor="#02979c"
+                android:text="English Main Important"
+                android:textStyle="bold"
+                android:layout_alignParentTop="true"
+                />
+
+            <TextView android:id="@+id/subTitll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Elan Academy in English Notes"
+                android:layout_below="@+id/titlesecondl"
+                android:textColor="#02979c"
+                />
+
+
+
+            <ImageView
+                android:id="@+id/icon34"
+                android:layout_width="30dp"
+                android:layout_height="25dp"
+                android:src="@drawable/right"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="15dp"
+                />
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>
